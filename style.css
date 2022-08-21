@@ -3,11 +3,15 @@
 }
 
 body{
+    font-family: 'Barlow', sans-serif;
+    background-color: #fefae0;
+    letter-spacing: 1px;
     margin: 0;
     padding: 0;
 }
 
 .container {
+    max-width: 800px;
     width: 90%;
     margin: 0 auto;
 }
@@ -18,13 +22,18 @@ body{
     justify-content: space-between;
     gap: 20px;
     align-items: center;
-    margin: 1em;  
 }
 
 .row-3{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
+
+.row-3 div{
+   width: 100%;
+ }
 
 img{
     width: 100px;
@@ -32,31 +41,87 @@ img{
 }
 
 .checkout-cart{
-    background-color: #F2F2F2;
+    background-color: #e9edc9;
     border-radius: 10px;
+    padding: 1.5em 2em;
+    margin: 2em 0;
 }
 
+.form-info{
+    width: 100%;
+    padding: 2em 1em;
+    background-color: #ccd5ae;
+    border-radius: 10px;
+}
 input{
     /* background: url("./icons/email.png") no-repeat scroll -3px; */
     width: 100%;
     padding: .5em 0;
     border-radius: 10px;
-    opacity: 50%;
+    opacity: 60%;
+    text-align: center;
 }
 
-@media (min-width: 500px){
+input[type=number] {
+    width: 50%;
+}
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1; 
+}
+
+.btn-submit{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    margin: 2em 0 0 0;
+    background-color: #e76f51;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.btn-submit:hover,
+.btn-submit:focus{
+    background-color: #f4a261;
+    color: black;
+    cursor: pointer;
+}
+
+select {
+    width: 100%;
+    border: 1px solid var(--select-border);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    padding: .5em 0;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #faedcd;
+    opacity: 40%;
+  }
+
+@media (min-width: 600px){
     .row-1{
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
         gap: 50px
     }
 
     .row-3{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    .row-3 div:first-of-type{
+       flex-grow: 1; 
+    }
+    .row-3 div:last-of-type{
+       flex-grow: 1;  
     }
 
     .checkout-cart{
-        height: 60vh;
+        height: 550px;
+        margin: 0;
     }
 }
