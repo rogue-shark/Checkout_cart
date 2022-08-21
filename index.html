@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+        <h1>Checkout Cart</h1>
+        <div class="row-1">
+            <div class="checkout-cart">
+                <div class="row-2">
+                    <img src="./image/photo1.png" alt="item-1">
+                    <div>
+                        <h2>Vintage Bag</h2>
+                        <p>$5.99 $6.99</p>
+                        <input type="number" name="item-no">
+                    </div>
+                </div>
+                <div class="row-2">
+                    <img src="./image/photo2.png" alt="item-1">
+                    <div>
+                        <h2>Shoes</h2>
+                        <p>$5.99 $6.99</p>
+                        <input type="number" name="item-no">
+                    </div>
+                </div>
+            <hr>
+              <div class="row-2">
+                <h2>Shipping</h2>
+                <h2>$19</h2>
+              </div>
+              <hr>
+              <div class="row-2">
+                <h2>Total</h2>
+                <h2>$148.98</h2>
+              </div>
+            </div>
+            <form action="#">
+                <h2>Contact Info</h2>
+                <h3>E-mail</h3>
+                <input type="email" placeholder="Enter your email...">
+                <h3>Phone</h3>
+                <input type="tel" placeholder="Enter your phone..." minlength="10" maxlength="10">
+
+                <h2>Shopping Address</h2>
+                <h3>Full Name</h3>
+                <input type="text" placeholder="Rogue Shark">
+                <h3>Address</h3>
+                <input type="text" placeholder="Your address..">
+                <h3>City</h3>
+                <input type="text" placeholder="Your city..">
+                <div class="row-3">
+                  <div>
+                    <h3>Country</h3>
+                    <select name="country" id="country-select">
+                        <option value="">--Please select a value--</option>
+                        <option value="USA">USA</option>
+                        <option value="USA">India</option>
+                        <option value="USA">UK</option>
+                    </select>
+                  </div>
+                  <div>
+                    <h3>Postal Code</h3>
+                    <input type="number" placeholder="Your postal code..">
+                  </div>
+                </div>
+                <button>Submit</button>
+            </form>   
+        </div>
+    </div>
+  </body>
+</html>
