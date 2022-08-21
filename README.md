@@ -36,7 +36,7 @@
 - Core HTMl and CSS
 
 ## Features
-- FlexBox and Grid
+- FlexBox and Forms
 
 ## Contact
 
